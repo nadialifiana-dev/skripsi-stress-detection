@@ -101,7 +101,7 @@ def clean_text(text):
 # 4. Fungsi untuk Menarik Tweet Otomatis
 def fetch_from_csv_simulated(username):
     try:
-        df_sample = pd.read_csv("datastres.csv", encoding='latin1') 
+        df = pd.read_csv("nama_file_dataset_kamu.csv", encoding='latin1') 
         if 'tweet' in df_sample.columns:
             random_tweets = df_sample['tweet'].sample(5).tolist()
             return random_tweets
